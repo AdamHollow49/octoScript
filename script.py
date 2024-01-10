@@ -7,4 +7,7 @@ def lock():
 def unlock():
     print ("Unlocking translations")
 
-sys.argv[0]
+if sys.argv[1] == 'lock':
+    lock()
+elif sys.argv[1] == 'unlock':
+    unlock()
